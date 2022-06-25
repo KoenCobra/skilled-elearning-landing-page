@@ -104,4 +104,30 @@ body {
   background-color: #13183f;
   border-radius: 28px;
   padding: 11px 24px;
+}
+
+.get-started-section h1 {
+  color: #13183f;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 26px;
+}
+.get-started-section p {
+  color: #83869a;
+  font-size: 1rem;
+  line-height: 26px;
+}
+.get-started-section .get-started-btn {
+  background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  color: #ffffff;
+  padding: 15px 38px;
+  border-radius: 31.5px;
+  margin-top: 24px;
+}
+
+.member-section {
+  margin-top: 60px;
+}
+.member-section .member-img {
+  transform: scale(1.25);
 }/*# sourceMappingURL=styles.css.map */
