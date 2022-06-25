@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+$font: "Plus Jakarta Sans", sans-serif;
+
+$purple: #666ca3;
+$dark: #13183f;
+$grey: #83869a;
+$darkPink: #f74780;
+$lightPink: #ffa7c3;
+$white: #ffffff;
+$pinkGradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+$blueGradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+
+body {
+ font-family: $font;
+}
