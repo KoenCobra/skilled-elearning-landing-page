@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+@import "resets";
 
 $font: "Plus Jakarta Sans", sans-serif;
 
@@ -13,4 +14,29 @@ $blueGradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
 
 body {
  font-family: $font;
+}
+
+.container {
+ margin: 1rem;
+}
+
+.header {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 38px;
+
+ h3 {
+  font-size: 28px;
+  color: $dark;
+ }
+
+ .get-started-btn {
+  color: $white;
+  background-color: $dark;
+  border-radius: 28px;
+  padding: 11px 24px;
+ }
+}
+
+.get-started-section {
 }
