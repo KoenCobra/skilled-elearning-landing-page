@@ -89,6 +89,11 @@ body {
 .container {
   margin: 1rem;
 }
+@media (min-width: 768px) {
+  .container {
+    margin: 24px 40px;
+  }
+}
 
 .header {
   display: flex;
@@ -106,30 +111,55 @@ body {
   padding: 11px 24px;
 }
 
-.get-started-section h1 {
+@media (min-width: 768px) {
+  .hero {
+    position: relative;
+  }
+}
+@media (min-width: 768px) {
+  .hero .get-started-section {
+    width: 21rem;
+  }
+}
+.hero .get-started-section h1 {
   color: #13183f;
   font-size: 40px;
   line-height: 50px;
   margin-bottom: 26px;
 }
-.get-started-section p {
+.hero .get-started-section p {
   color: #83869a;
   font-size: 1rem;
   line-height: 26px;
 }
-.get-started-section .get-started-btn {
+.hero .get-started-section .get-started-btn {
   background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
   color: #ffffff;
   padding: 15px 38px;
   border-radius: 31.5px;
   margin-top: 24px;
 }
-
-.member-section {
+.hero .member-section {
   margin-top: 60px;
 }
-.member-section .member-img {
+.hero .member-section .member-img {
+  display: block;
   transform: scale(1.25);
+}
+@media (min-width: 768px) {
+  .hero .member-section .member-img {
+    display: none;
+  }
+}
+.hero .member-section .member-img-tablet {
+  position: absolute;
+  top: -10rem;
+  right: -20rem;
+}
+@media (max-width: 768px) {
+  .hero .member-section .member-img-tablet {
+    display: none;
+  }
 }
 
 .courses-section .courses-title {

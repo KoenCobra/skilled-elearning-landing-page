@@ -18,6 +18,10 @@ body {
 
 .container {
  margin: 1rem;
+
+ @media (min-width: 768px) {
+  margin: 24px 40px;
+ }
 }
 
 .header {
@@ -38,32 +42,55 @@ body {
  }
 }
 
-.get-started-section {
- h1 {
-  color: $dark;
-  font-size: 40px;
-  line-height: 50px;
-  margin-bottom: 26px;
+.hero {
+ @media (min-width: 768px) {
+  position: relative;
  }
- p {
-  color: $grey;
-  font-size: 1rem;
-  line-height: 26px;
+ .get-started-section {
+  @media (min-width: 768px) {
+   width: 21rem;
+  }
+  h1 {
+   color: $dark;
+   font-size: 40px;
+   line-height: 50px;
+   margin-bottom: 26px;
+  }
+  p {
+   color: $grey;
+   font-size: 1rem;
+   line-height: 26px;
+  }
+
+  .get-started-btn {
+   background: $pinkGradient;
+   color: $white;
+   padding: 15px 38px;
+   border-radius: 31.5px;
+   margin-top: 24px;
+  }
  }
 
- .get-started-btn {
-  background: $pinkGradient;
-  color: $white;
-  padding: 15px 38px;
-  border-radius: 31.5px;
-  margin-top: 24px;
- }
-}
+ .member-section {
+  margin-top: 60px;
+  @media (min-width: 768px) {
+  }
+  .member-img {
+   display: block;
+   transform: scale(1.25);
+   @media (min-width: 768px) {
+    display: none;
+   }
+  }
 
-.member-section {
- margin-top: 60px;
- .member-img {
-  transform: scale(1.25);
+  .member-img-tablet {
+   position: absolute;
+   top: -10rem;
+   right: -20rem;
+   @media (max-width: 768px) {
+    display: none;
+   }
+  }
  }
 }
 
