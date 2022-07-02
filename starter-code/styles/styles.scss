@@ -23,6 +23,9 @@ body {
  @media (min-width: 767px) {
   padding: 24px 40px;
  }
+ @media (min-width: 1440px) {
+  padding: 24px 165px;
+ }
 }
 
 .header {
@@ -40,6 +43,12 @@ body {
   background-color: $dark;
   border-radius: 28px;
   padding: 11px 24px;
+  transition: all 200ms linear;
+
+  &:hover {
+   background-color: $grey !important;
+   cursor: pointer;
+  }
  }
 }
 
@@ -50,6 +59,12 @@ body {
   margin-bottom: 8rem;
   margin-top: 5rem;
  }
+ @media (min-width: 1440px) {
+  display: grid;
+  grid-template-columns: 45% 60%;
+  margin-bottom: 0;
+  margin-top: 185px;
+ }
  .get-started-section {
   @media (min-width: 767px) {
   }
@@ -58,11 +73,21 @@ body {
    font-size: 40px;
    line-height: 50px;
    margin-bottom: 26px;
+   @media (min-width: 1440px) {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 71px;
+   }
   }
   p {
    color: $grey;
    font-size: 1rem;
    line-height: 26px;
+   @media (min-width: 1440px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+   }
   }
 
   .get-started-btn {
@@ -71,23 +96,46 @@ body {
    padding: 15px 38px;
    border-radius: 31.5px;
    margin-top: 24px;
+   transition: all 200ms linear;
+
+   &:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+     linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    cursor: pointer;
+   }
+
+   @media (min-width: 1440px) {
+    margin-top: 40px;
+   }
   }
  }
 
  .member-section {
   margin-top: 60px;
+  .member-img-desktop {
+   transform: scale(1.4) translate(11rem, -13.5rem);
+
+   display: block;
+
+   @media (max-width: 1439px) {
+    display: none;
+   }
+  }
+  .member-img-tablet {
+   transform: scale(2.5) translate(3rem, -2.5rem);
+
+   @media (min-width: 1440px) {
+    display: none;
+   }
+
+   @media (max-width: 767px) {
+    display: none;
+   }
+  }
   .member-img {
    display: block;
    transform: scale(1.25);
    @media (min-width: 767px) {
-    display: none;
-   }
-  }
-
-  .member-img-tablet {
-   transform: scale(2.5) translate(3rem, -2.5rem);
-
-   @media (max-width: 767px) {
     display: none;
    }
   }
@@ -102,18 +150,30 @@ body {
    grid-template-columns: repeat(2, 1fr);
    gap: 11px;
   }
+
+  @media (min-width: 1440px) {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 30px;
+  }
  }
  .courses-title {
-  @media (min-width: 767px) {
-   padding: 56px 21px 139px 32px;
-  }
   background: $pinkGradient;
   color: $white;
+  font-weight: 800;
   font-size: 24px;
   line-height: 32px;
   padding: 24px 29px;
   border-radius: 10px;
   margin-bottom: 40px;
+
+  @media (min-width: 767px) {
+   padding: 56px 21px 139px 32px;
+  }
+  @media (min-width: 1440px) {
+   font-size: 32px;
+   line-height: 40px;
+  }
  }
 
  .course {
@@ -141,6 +201,12 @@ body {
    line-height: 26px;
    color: $grey;
    margin-bottom: 24px;
+
+   @media (min-width: 1440px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+   }
   }
 
   .start-course-btn {
@@ -166,6 +232,9 @@ body {
  @media (min-width: 767px) {
   padding: 36px 40px;
  }
+ @media (min-width: 1440px) {
+  padding: 32px 165px;
+ }
 
  h3 {
   font-weight: 800;
@@ -180,5 +249,12 @@ body {
   background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
   border-radius: 28px;
   padding: 10px 24px;
+  transition: all 0.5s ease;
+
+  &:hover {
+   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    linear-gradient(180deg, #ff48f1 -54.32%, #f02aa6 100%);
+   cursor: pointer;
+  }
  }
 }
